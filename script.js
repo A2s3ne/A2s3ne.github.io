@@ -14,11 +14,11 @@ const hours = now.getHours();
 
 if (isDaytime(now)) {
     // Daytime
-    document.body.style.background = "##ff0000";
+    document.body.style.background = "#ff0000";
     document.body.style.color = "#333";
 } else {
     // Nighttime
-    document.body.style.background = "#262626";
+    document.body.style.background = "#ff0000";
     document.body.style.color = "#f2f2f2";
 }
 
