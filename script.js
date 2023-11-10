@@ -30,3 +30,16 @@ function formatTime(time) {
 countdown();
 
 setInterval(countdown, 1000);
+
+$(function nightdayshift() {
+  
+  var current_date = new Date();
+  var hour = current_date.getHours();
+  
+  if(hour < 10) {
+    $('body').addClass('day');
+  } else {
+    $('body').addClass('midday');
+  }
+  
+});
