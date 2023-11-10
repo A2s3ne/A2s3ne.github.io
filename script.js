@@ -18,8 +18,8 @@ if (isDaytime(now)) {
     document.body.style.color = "#333";
 } else {
     // Nighttime
-    document.body.style.background = "#f2f2f2";
-    document.body.style.color = "#262626";
+    document.body.style.background = "#262626";
+    document.body.style.color = "#f2f2f2";
 }
 
 function countdown() {
