@@ -2,7 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
-const newYears = "2023-12-02T16:24:03";
+const newYears = "2023-12-02T10:24:03";
 
 function isDaytime(dateStr) {
     const date = new Date(dateStr);
