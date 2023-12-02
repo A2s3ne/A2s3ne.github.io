@@ -23,9 +23,25 @@ if (isDaytime(now)) {
 }
 
 function countdown() {
-    const newYearsDate = new Date(newYears);
-    const currentDate = new Date();
+  const newYearsDate = new Date(newYears);
+  const currentDate = new Date();
 
+  if (currentDate > newYearsDate) {
+    // Calculate the difference between the current time and the target time
+    const diff = currentDate - newYearsDate;
+
+    // Update the countdown with the difference
+    const days = Math.floor(diff / 3600 / 24);
+    const hours = Math.floor(diff / 3600) % 24;
+    const mins = Math.floor(diff / 60) % 60;
+    const seconds = Math.floor(diff) % 60;
+
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = formatTime(hours);
+    minsEl.innerHTML = formatTime(mins);
+    secondsEl.innerHTML = formatTime(seconds);
+  } else {
+    // Current time is before the target time, so just display the countdown normally
     const totalSeconds = (newYearsDate - currentDate) / 1000;
 
     const days = Math.floor(totalSeconds / 3600 / 24);
@@ -37,6 +53,7 @@ function countdown() {
     hoursEl.innerHTML = formatTime(hours);
     minsEl.innerHTML = formatTime(mins);
     secondsEl.innerHTML = formatTime(seconds);
+  }
 }
 
 function formatTime(time) {
