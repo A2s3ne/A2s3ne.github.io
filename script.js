@@ -49,7 +49,7 @@ countdown();
 setInterval(countdown, 1000);
 
 // Update the countdown to start at a specific time
-const targetTime = new Date("2023-11-27T15:00:00"); // 3 PM on November 27th, 2023
+const targetTime = new Date("2023-12-03T16:24:03"); 
 const currentTime = new Date();
 const diff = targetTime - currentTime;
 
