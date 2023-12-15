@@ -49,7 +49,7 @@ countdown();
 setInterval(countdown, 1000);
 
 // Update the countdown to start at a specific time
-const targetTime = new Date("2024-01-01T00:00:00""); 
+const targetTime = new Date("2024-01-01T00:00:00"); 
 const currentTime = new Date();
 const diff = targetTime - currentTime;
 
