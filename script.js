@@ -6,7 +6,7 @@ const newYears = "2024-02-19T00:00:00";
 
 function isDaytime(dateStr) {
     const date = new Date(dateStr);
-    return date.getHours() >= 5 && date.getHours() < 18;
+    return date.getHours() >= 6 && date.getHours() < 18.5;
 }
 
 const now = new Date();
