@@ -2,7 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
-const newYears = "2024-02-19T00:00:00";
+const newYears = "2024-04-08T07:50:00";
 
 function isDaytime(dateStr) {
     const date = new Date(dateStr);
@@ -49,7 +49,7 @@ countdown();
 setInterval(countdown, 1000);
 
 // Update the countdown to start at a specific time
-const targetTime = new Date("2024-02-19T00:00:00"); 
+const targetTime = new Date("2024-04-08T07:50:00"); 
 const currentTime = new Date();
 const diff = targetTime - currentTime;
 
